@@ -1,0 +1,76 @@
+/* App.css */
+
+/* Set the background image for the body */
+body {
+  background-image: url('./backgnd.jpg');
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  font-family: Arial, sans-serif; /* Optional: set the font for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* This ensures the sections are side by side */
+  align-items: flex-start;
+  min-height: 100vh; /* Ensures the content fills the screen height */
+  flex-direction: row; /* Changes to row to position sections horizontally */
+  padding: 20px;
+  text-align: center;
+}
+
+.encryption, .decryption {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 45%; /* Adjusted width to make both sections fit side by side */
+  max-width: 500px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+/* Optional: Ensure both sections have proper spacing when in parallel */
+.encryption {
+  margin-right: 20px; /* Adds space between the encryption and decryption sections */
+}
+h1 {
+  text-align: center; /* Aligns the text to the center */
+  margin-bottom: 20px; 
+  color: rgb(26, 25, 25);/* Adds some space below the heading */
+}
